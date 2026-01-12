@@ -31,12 +31,12 @@ export default function About() {
 
         <div className="space-y-4 text-gray-600">
           <div>
-            <p className="font-medium text-black">B.Tech (Bachelor of Technology)</p>
+            <p className="font-medium text-black">B.Tech (Computer science and Engineering/CSE)</p>
             <p>
-              Ballari Institute of Technology and Management (CSE),
+              Ballari Institute of Technology and Management ,
               Ballari, Karnataka
             </p>
-            <p>2022 – 2026 (Expected)</p>
+            <p>2022</p>
           </div>
 
           <div>
@@ -46,7 +46,7 @@ export default function About() {
           </div>
 
           <div>
-            <p className="font-medium text-black">Schooling (SSC)</p>
+            <p className="font-medium text-black">School(SSC)</p>
             <p>Montessori E M High School, Kurnool, Andhra Pradesh</p>
             <p>2019 – 2020</p>
           </div>
@@ -105,7 +105,7 @@ export default function About() {
                   alt="Hockey Achievement"
                   width={300}
                   height={200}
-                  className="rounded cursor-pointer"
+                  className="transition-all duration-300 hover:scale-[1.02]"
                   onClick={() => setZoomImage(img)}
                 />
               ))}
@@ -115,17 +115,6 @@ export default function About() {
               I regularly play hockey and have represented my college in
               competitive tournaments, which strengthened my teamwork,
               leadership, and strategic thinking skills.
-            </p>
-          </div>
-
-          {/* VOLLEYBALL */}
-          <div className="border rounded-lg p-5 hover:shadow-md transition">
-            <h3 className="text-xl font-semibold mb-3">
-              Volleyball 
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              I play volleyball recreationally to stay physically active.
-              It improves my agility, coordination, and teamwork skills.
             </p>
           </div>
 

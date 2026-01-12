@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full border-b">
+    <header className="sticky top-0 z-50 bg-white border-b">
       <nav className="max-w-5xl mx-auto px-6 sm:px-10 py-4 flex items-center justify-between">
 
         {/* LOGO / NAME */}

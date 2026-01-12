@@ -20,7 +20,6 @@ export default function Skills() {
             "HTML",
             "CSS",
             "JavaScript",
-            "Next.js",
           ].map((skill) => (
             <span
               key={skill}
@@ -42,6 +41,7 @@ export default function Skills() {
         <div className="flex flex-wrap gap-4">
           {[
             "Python",
+            "SQL",
             "Problem Solving",
           ].map((skill) => (
             <span
@@ -55,27 +55,7 @@ export default function Skills() {
         </div>
       </section>
 
-      {/* RPA */}
-      <section className="mb-14">
-        <h2 className="text-2xl font-semibold mb-6">
-          Robotic Process Automation (RPA)
-        </h2>
-
-        <div className="flex flex-wrap gap-4">
-          {[
-            "UiPath",
-            "Workflow Design",
-          ].map((skill) => (
-            <span
-              key={skill}
-              className="px-5 py-2 border rounded-full text-sm
-              hover:bg-black hover:text-white transition"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
+      
 
       {/* TOOLS */}
       <section className="mb-14">
@@ -83,10 +63,8 @@ export default function Skills() {
 
         <div className="flex flex-wrap gap-4">
           {[
-            "Git",
             "GitHub",
             "VS Code",
-            "Vercel",
           ].map((skill) => (
             <span
               key={skill}

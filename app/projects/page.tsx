@@ -52,20 +52,52 @@ export default function Projects() {
 
         {/* PROJECT 3 (OPTIONAL / FUTURE) */}
         <div className="border rounded-lg p-6 hover:shadow-md transition">
-          <h2 className="text-xl font-semibold mb-2">
+          <h2 className="text-2xl font-semibold mb-2">
             AI BASED HEALTH MONITORING SYSTEM
           </h2>
-          <p>
+          <p className="text-gray-600 mb-4">
             A Project based Health Monitoring system which helps people takecare of them
             from small health issues(Fever,Cold). System will suggest a series of information on
             Symptoms,Homecare remedies and Medication details based on age group 
           </p>
+
           <p className="text-sm text-gray-500 mb-4">
             <span className="font-medium text-black">Tech Stack:</span>{" "}
             HTML, CSS, Node.js, Python, NLP
           </p>
         </div>
 
+         {/* PROJECT 4 (OPTIONAL / FUTURE) */}
+        <div className="border rounded-lg p-6 hover:shadow-md transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            Voter Database Management System
+          </h2>
+          <p className="text-gray-600 mb-4">
+            Developed SQL queries for efficient data insertion, retrieval, updating, and validation of voter records.
+            The system ensures data integrity and supports accurate, organized management of election-related information.
+          </p>
+
+          <p className="text-sm text-gray-500 mb-4">
+            <span className="font-medium text-black">Tech Stack:</span>{" "}
+            DBMS
+          </p>
+        </div>
+        {/* PROJECT 5 */}
+        <div className="border rounded-lg p-6 hover:shadow-md transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            Match Result Tracking System
+          </h2>
+
+          <p className="text-gray-600 mb-4">
+            Created a system to record, update, and display sports match results.
+            Implemented statistics tracking to analyze team performance and match history.
+          </p>
+
+          <p className="text-sm text-gray-500 mb-4">
+            <span className="font-medium text-black">Tech Stack:</span>{" "}
+            Python based roject
+          </p>
+        </div>
       </div>
     </main>
   );
