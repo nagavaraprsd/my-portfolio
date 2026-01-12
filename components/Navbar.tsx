@@ -1,15 +1,56 @@
-export default function Navbar() {
-  return (
-    <nav className="w-full px-8 py-4 flex justify-between items-center border-b bg-white sticky top-0 z-50">
-      <h1 className="font-bold text-xl">B K Naga Vara Prasad</h1>
+"use client";
 
-      <ul className="flex gap-6 text-gray-600">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Skills", path: "/skills" },
+  { name: "Projects", path: "/projects" },
+  { name: "Resume", path: "/resume" },
+  { name: "Contact", path: "/contact" },
+  { name: "Certificates", path: "/certificates" },
+];
+
+export default function Navbar() {
+  const pathname = usePathname();
+
+  return (
+    <header className="w-full border-b">
+      <nav className="max-w-5xl mx-auto px-6 sm:px-10 py-4 flex items-center justify-between">
+
+        {/* LOGO / NAME */}
+        <Link
+          href="/"
+          className="text-xl font-bold tracking-tight"
+        >
+          B K Naga Vara Prasad
+        </Link>
+
+        {/* NAV LINKS */}
+        <ul className="hidden sm:flex gap-8 text-sm font-medium">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.path;
+
+            return (
+              <li key={link.path}>
+                <Link
+                  href={link.path}
+                  className={`transition hover:text-black ${
+                    isActive
+                      ? "text-black border-b-2 border-black pb-1"
+                      : "text-gray-600"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+
+      </nav>
+    </header>
   );
 }
