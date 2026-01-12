@@ -95,7 +95,7 @@ export default function About() {
               {[
                 "/Team_1.jpeg",
                 "/Hockey_trnmt.jpeg",
-                "/Hockey-clg.jpeg",
+                "/Hockey_clg.jpeg",
                 "/Self_1.jpeg",
                 "/Marathon.jpeg"
               ].map((img) => (
