@@ -31,7 +31,7 @@ export default function About() {
 
         <div className="space-y-4 text-gray-600">
           <div>
-            <p className="font-medium text-black">B.Tech (Computer science and Engineering/CSE)</p>
+            <p className="font-medium text-black">B.Tech (Computer science and Engineering)</p>
             <p>
               Ballari Institute of Technology and Management ,
               Ballari, Karnataka
