@@ -57,26 +57,6 @@ export default function Home() {
 
       </section>
 
-      {/* QUICK HIGHLIGHTS */}
-      <section className="grid sm:grid-cols-3 gap-8 text-center mb-28">
-
-        <div className="border rounded-xl p-6 hover:shadow-md transition">
-          <h3 className="text-3xl font-bold mb-2">5</h3>
-          <p className="text-gray-600">Projects Built</p>
-        </div>
-
-        <div className="border rounded-xl p-6 hover:shadow-md transition">
-          <h3 className="text-3xl font-bold mb-2">4+</h3>
-          <p className="text-gray-600">Skills & Tools</p>
-        </div>
-
-        <div className="border rounded-xl p-6 hover:shadow-md transition">
-          <h3 className="text-3xl font-bold mb-2">Zonal</h3>
-          <p className="text-gray-600">Hockey Player</p>
-        </div>
-
-      </section>
-
       {/* ABOUT PREVIEW */}
       <section className="max-w-3xl mb-28">
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
