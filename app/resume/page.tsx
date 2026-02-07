@@ -15,7 +15,7 @@ export default function Resume() {
 
         {/* VIEW RESUME */}
         <a
-          href="/Prasad_resume[Main].pdf"
+          href="/My_Resume_Prasad.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-8 py-4 border rounded-full text-lg
@@ -26,7 +26,7 @@ export default function Resume() {
 
         {/* DOWNLOAD RESUME */}
         <a
-          href="/Prasad_resume[Main].pdf"
+          href="/My_Resume_Prasad.pdf"
           download
           className="px-8 py-4 border rounded-full text-lg
           hover:bg-black hover:text-white transition"

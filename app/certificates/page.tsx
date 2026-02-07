@@ -15,20 +15,20 @@ export default function Certificates() {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, []); 
 
   const certificates = [
-    {
-      src: "/uipath.jpeg",
-      title: "RPA Automation using UiPath",
-      issuer: "Issued by UiPath (College)",
-      year: "2025",
-    },
     {
       src: "/Python_internship_1.jpeg",
       title: "Python Programming Certification",
       issuer: "Issued by EZTS Company",
       year: "2024",
+    },
+    {
+      src: "/uipath.jpeg",
+      title: "RPA Automation using UiPath",
+      issuer: "Issued by UiPath (College)",
+      year: "2025",
     },
     {
       src: "/certificate_1.jpeg",
@@ -41,6 +41,18 @@ export default function Certificates() {
       title: "Inter-Collegiate State Level Tournament",
       issuer: "VTU with BITM",
       year: "2025",
+    },
+    {
+      src: "/AWS.png",
+      title: "AWS Cloud Practitioner Essentials",
+      issuer: "AWS",
+      year: "2025",
+    },
+     {
+      src: "/SimpleLearn_SQL.png",
+      title: "Introduction to SQL",
+      issuer: "SimpleLearn",
+      year: "2026",
     },
   ];
 
