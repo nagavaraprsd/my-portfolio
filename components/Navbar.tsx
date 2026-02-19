@@ -23,7 +23,7 @@ export default function Navbar() {
         {/* LOGO / NAME */}
         <Link
           href="/"
-          className="text-xl font-bold tracking-tight"
+          className="text-black font-extrabold tracking-wide"
         >
           B K Naga Vara Prasad
         </Link>

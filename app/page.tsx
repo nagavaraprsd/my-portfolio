@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="px-6 sm:px-10 py-20 max-w-6xl mx-auto">
+    <main className="px-6 sm:px-10 py-20 max-w-6xl mx-auto text-white min-h-screen">
 
       {/* HERO SECTION */}
       <section className="flex flex-col-reverse sm:flex-row items-center justify-between gap-16 mb-28">
@@ -12,14 +12,14 @@ export default function Home() {
         <div className="flex-1">
           <h1 className="text-5xl sm:text-6xl font-bold leading-tight mb-6">
             Hi <span className="inline-block">👋</span>, <br />
-            I’m <span className="text-gray-800">B K Naga Vara Prasad</span>
+            I’m <span className="text-white">B K Naga Vara Prasad</span>
           </h1>
 
-          <p className="text-xl text-gray-600 mb-6">
+          <p className="text-xl text-white/80 mb-6">
             B.Tech Final Year Student | Aspiring Software Engineer
           </p>
 
-          <p className="text-gray-500 max-w-xl mb-10">
+          <p className="text-white/70 max-w-xl mb-10">
             I build modern web applications using React, Next.js, and Python,
             focusing on clean code and real-world problem solving.
           </p>
@@ -27,14 +27,16 @@ export default function Home() {
           <div className="flex gap-4">
             <Link
               href="/projects"
-              className="px-6 py-3 rounded-full bg-black text-white hover:bg-gray-800 transition"
+              className="px-6 py-3 rounded-full border border-white/30
+              hover:bg-white hover:text-black transition"
             >
               View Projects
             </Link>
 
             <Link
               href="/resume"
-              className="px-6 py-3 rounded-full border hover:bg-black hover:text-white transition"
+              className="px-6 py-3 rounded-full border border-white/30
+              hover:bg-white hover:text-black transition"
             >
               Resume
             </Link>
@@ -43,24 +45,23 @@ export default function Home() {
 
         {/* RIGHT IMAGE */}
         <div className="relative">
-  <div className="absolute inset-0 rounded-full bg-gray-200 blur-xl"></div>
+          <div className="absolute inset-0 rounded-full bg-white/20 blur-xl"></div>
 
-  <Image
-    src="/Prasad_2.jpeg"
-    alt="B K Naga Vara Prasad"
-    width={260}
-    height={260}
-    className="relative rounded-full object-cover"
-  />
-</div>
-
+          <Image
+            src="/Prasad_2.jpeg"
+            alt="B K Naga Vara Prasad"
+            width={260}
+            height={260}
+            className="relative rounded-full object-cover"
+          />
+        </div>
 
       </section>
 
       {/* ABOUT PREVIEW */}
       <section className="max-w-3xl mb-28">
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-        <p className="text-gray-600 leading-relaxed mb-6">
+        <p className="text-white/80 leading-relaxed mb-6">
           I am a B.Tech final year student passionate about software development,
           automation, and modern web technologies. I enjoy building real-world
           applications and continuously learning new tools.
@@ -68,24 +69,25 @@ export default function Home() {
 
         <Link
           href="/about"
-          className="font-medium border-b border-black hover:opacity-70"
+          className="font-medium border-b border-white hover:opacity-70"
         >
           Read more →
         </Link>
       </section>
 
       {/* CALL TO ACTION */}
-      <section className="text-center border-t pt-16">
+      <section className="text-center border-t border-white/20 pt-16">
         <h2 className="text-3xl font-semibold mb-4">
           Let’s work together
         </h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-white/80 mb-6">
           Feel free to explore my work or get in touch.
         </p>
 
         <Link
           href="/contact"
-          className="px-8 py-3 rounded-full bg-black text-white hover:bg-gray-800 transition"
+          className="px-8 py-3 rounded-full border border-white/30
+          hover:bg-white hover:text-black transition"
         >
           Contact Me
         </Link>

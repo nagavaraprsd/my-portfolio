@@ -1,26 +1,27 @@
 "use client";
 
 import Image from "next/image";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function About() {
   const [zoomImage, setZoomImage] = useState<string | null>(null);
+
   useEffect(() => {
-  const handleKeyDown = (event: KeyboardEvent) => {
-    if (event.key === "Escape") {
-      setZoomImage(null);
-    }
-  };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setZoomImage(null);
+      }
+    };
 
-  window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
 
-  return () => {
-    window.removeEventListener("keydown", handleKeyDown);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
-    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto">
+    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto text-white">
 
       {/* PAGE TITLE */}
       <h1 className="text-4xl font-bold mb-10">About Me</h1>
@@ -29,24 +30,26 @@ export default function About() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Education</h2>
 
-        <div className="space-y-4 text-gray-600">
+        <div className="space-y-4 text-white/80">
           <div>
-            <p className="font-medium text-black">B.Tech (Computer science and Engineering)</p>
+            <p className="font-medium text-white">
+              B.Tech (Computer Science and Engineering)
+            </p>
             <p>
-              Ballari Institute of Technology and Management ,
+              Ballari Institute of Technology and Management,
               Ballari, Karnataka
             </p>
             <p>2022</p>
           </div>
 
           <div>
-            <p className="font-medium text-black">Intermediate</p>
+            <p className="font-medium text-white">Intermediate</p>
             <p>Narayana Jr College, Kurnool, Andhra Pradesh</p>
             <p>2020 – 2022</p>
           </div>
 
           <div>
-            <p className="font-medium text-black">School(SSC)</p>
+            <p className="font-medium text-white">School (SSC)</p>
             <p>Montessori E M High School, Kurnool, Andhra Pradesh</p>
             <p>2019 – 2020</p>
           </div>
@@ -56,7 +59,7 @@ export default function About() {
       {/* INTERESTS */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Interests</h2>
-        <ul className="list-disc list-inside text-gray-600 space-y-2">
+        <ul className="list-disc list-inside text-white/80 space-y-2">
           <li>Web Development</li>
           <li>Learning New Things</li>
           <li>Artificial Intelligence Tools</li>
@@ -67,7 +70,7 @@ export default function About() {
       {/* HOBBIES */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Hobbies</h2>
-        <ul className="list-disc list-inside text-gray-600 space-y-2">
+        <ul className="list-disc list-inside text-white/80 space-y-2">
           <li>Exploring new technologies</li>
           <li>Listening to music</li>
           <li>Reading about startups and innovation</li>
@@ -79,7 +82,7 @@ export default function About() {
       <section>
         <h2 className="text-2xl font-semibold mb-6">Sports</h2>
 
-        <p className="text-gray-600 mb-8 max-w-3xl">
+        <p className="text-white/80 mb-8 max-w-3xl">
           Sports help me maintain physical fitness, discipline, teamwork,
           and leadership qualities. I have represented my college in
           Zonal and Inter-Zonal level tournaments.
@@ -88,8 +91,10 @@ export default function About() {
         <div className="grid sm:grid-cols-2 gap-8">
 
           {/* HOCKEY */}
-          <div className="border rounded-lg p-5 hover:shadow-md transition">
-            <h3 className="text-xl font-semibold mb-3">Hockey (Competitive)</h3>
+          <div className="border border-white/20 rounded-lg p-5 hover:shadow-lg transition">
+            <h3 className="text-xl font-semibold mb-3 text-white">
+              Hockey (Competitive)
+            </h3>
 
             <div className="grid grid-cols-2 gap-3 mb-4">
               {[
@@ -105,13 +110,13 @@ export default function About() {
                   alt="Hockey Achievement"
                   width={300}
                   height={200}
-                  className="transition-all duration-300 hover:scale-[1.02]"
+                  className="transition-all duration-300 hover:scale-[1.02] cursor-pointer"
                   onClick={() => setZoomImage(img)}
                 />
               ))}
             </div>
 
-            <p className="text-gray-600 text-sm">
+            <p className="text-white/80 text-sm">
               I regularly play hockey and have represented my college in
               competitive tournaments, which strengthened my teamwork,
               leadership, and strategic thinking skills.

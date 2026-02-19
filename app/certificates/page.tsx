@@ -15,7 +15,7 @@ export default function Certificates() {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []); 
+  }, []);
 
   const certificates = [
     {
@@ -48,7 +48,7 @@ export default function Certificates() {
       issuer: "AWS",
       year: "2025",
     },
-     {
+    {
       src: "/SimpleLearn_SQL.png",
       title: "Introduction to SQL",
       issuer: "SimpleLearn",
@@ -57,13 +57,13 @@ export default function Certificates() {
   ];
 
   return (
-    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto">
+    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto text-white">
 
       {/* PAGE TITLE */}
       <h1 className="text-4xl font-bold mb-10">Certifications</h1>
 
       {/* INTRO */}
-      <p className="text-gray-600 max-w-3xl mb-16">
+      <p className="text-white/80 max-w-3xl mb-16">
         Below are some of the certifications and achievements I have earned
         through academic learning, workshops, internships, and sports activities.
       </p>
@@ -73,19 +73,26 @@ export default function Certificates() {
         {certificates.map((cert) => (
           <div
             key={cert.src}
-            className="border rounded-lg p-5 hover:shadow-md transition"
+            className="border border-white/20 rounded-lg p-5 hover:shadow-lg transition"
           >
             <Image
               src={cert.src}
               alt={cert.title}
               width={400}
               height={260}
-              className="rounded mb-4 cursor-pointer"
+              className="rounded mb-4 cursor-pointer hover:scale-[1.02] transition-all duration-300"
               onClick={() => setZoomImage(cert.src)}
             />
-            <h3 className="text-lg font-semibold mb-1">{cert.title}</h3>
-            <p className="text-sm text-gray-600">{cert.issuer}</p>
-            <p className="text-sm text-gray-500">Year: {cert.year}</p>
+
+            <h3 className="text-lg font-semibold mb-1 text-white">
+              {cert.title}
+            </h3>
+
+            <p className="text-sm text-white/80">{cert.issuer}</p>
+
+            <p className="text-sm text-white/70">
+              Year: {cert.year}
+            </p>
           </div>
         ))}
       </div>

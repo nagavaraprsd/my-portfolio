@@ -1,12 +1,12 @@
 export default function Skills() {
   return (
-    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto">
+    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto text-white">
 
       {/* PAGE TITLE */}
       <h1 className="text-4xl font-bold mb-12">Skills</h1>
 
       {/* INTRO */}
-      <p className="text-gray-600 max-w-3xl mb-16">
+      <p className="text-white/80 max-w-3xl mb-16">
         Below are the technical and professional skills I have developed through
         academics, projects, and hands-on experience.
       </p>
@@ -16,15 +16,11 @@ export default function Skills() {
         <h2 className="text-2xl font-semibold mb-6">Frontend Development</h2>
 
         <div className="flex flex-wrap gap-4">
-          {[
-            "HTML",
-            "CSS",
-            "JavaScript",
-          ].map((skill) => (
+          {["HTML", "CSS", "JavaScript"].map((skill) => (
             <span
               key={skill}
-              className="px-5 py-2 border rounded-full text-sm
-              hover:bg-black hover:text-white transition"
+              className="px-5 py-2 border border-white/30 rounded-full text-sm
+              text-white hover:bg-white hover:text-black transition"
             >
               {skill}
             </span>
@@ -39,15 +35,11 @@ export default function Skills() {
         </h2>
 
         <div className="flex flex-wrap gap-4">
-          {[
-            "Python",
-            "SQL",
-            "Problem Solving",
-          ].map((skill) => (
+          {["Python", "SQL", "Problem Solving"].map((skill) => (
             <span
               key={skill}
-              className="px-5 py-2 border rounded-full text-sm
-              hover:bg-black hover:text-white transition"
+              className="px-5 py-2 border border-white/30 rounded-full text-sm
+              text-white hover:bg-white hover:text-black transition"
             >
               {skill}
             </span>
@@ -55,21 +47,16 @@ export default function Skills() {
         </div>
       </section>
 
-      
-
       {/* TOOLS */}
       <section className="mb-14">
         <h2 className="text-2xl font-semibold mb-6">Tools & Platforms</h2>
 
         <div className="flex flex-wrap gap-4">
-          {[
-            "GitHub",
-            "VS Code",
-          ].map((skill) => (
+          {["GitHub", "VS Code"].map((skill) => (
             <span
               key={skill}
-              className="px-5 py-2 border rounded-full text-sm
-              hover:bg-black hover:text-white transition"
+              className="px-5 py-2 border border-white/30 rounded-full text-sm
+              text-white hover:bg-white hover:text-black transition"
             >
               {skill}
             </span>
@@ -90,8 +77,8 @@ export default function Skills() {
           ].map((skill) => (
             <span
               key={skill}
-              className="px-5 py-2 border rounded-full text-sm
-              hover:bg-black hover:text-white transition"
+              className="px-5 py-2 border border-white/30 rounded-full text-sm
+              text-white hover:bg-white hover:text-black transition"
             >
               {skill}
             </span>
