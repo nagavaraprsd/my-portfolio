@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "B K Naga Vara Prasad | Portfolio",
   description:
-    "Computer Science Engineering Graduate skilled in Python, Java, JavaScript, SQL, HTML, CSS, and modern web technologies.",
+    "Computer Science Engineering Graduate skilled in Python, JavaScript, SQL, HTML, CSS, and modern web technologies.",
   keywords: [
     "B K Naga Vara Prasad",
     "Portfolio",

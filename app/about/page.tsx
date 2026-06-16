@@ -24,15 +24,19 @@ export default function About() {
     <main className="w-full min-h-screen px-8 md:px-16 lg:px-24 py-20 text-slate-900">
 
       {/* PAGE TITLE */}
-      <h1 className="text-4xl font-bold mb-10">About Me</h1>
+      <h1 className="text-5xl md:text-6xl font-bold mb-12">
+        About Me
+      </h1>
 
       {/* EDUCATION */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Education</h2>
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-6">
+          Education
+        </h2>
 
-        <div className="space-y-4 text-slate-600">
+        <div className="space-y-6 text-lg text-slate-600">
           <div>
-            <p className="font-medium text-slate-900">
+            <p className="text-xl font-semibold text-slate-900">
               B.Tech (Computer Science and Engineering)
             </p>
             <p>
@@ -43,13 +47,17 @@ export default function About() {
           </div>
 
           <div>
-            <p className="font-medium text-slate-900">Intermediate</p>
+            <p className="text-xl font-semibold text-slate-900">
+              Intermediate
+            </p>
             <p>Narayana Jr College, Kurnool, Andhra Pradesh</p>
             <p>2020 – 2022</p>
           </div>
 
           <div>
-            <p className="font-medium text-slate-900">School (SSC)</p>
+            <p className="text-xl font-semibold text-slate-900">
+              School (SSC)
+            </p>
             <p>Montessori E M High School, Kurnool, Andhra Pradesh</p>
             <p>2019 – 2020</p>
           </div>
@@ -57,9 +65,12 @@ export default function About() {
       </section>
 
       {/* INTERESTS */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Interests</h2>
-        <ul className="list-disc list-inside text-slate-600 space-y-2">
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-6">
+          Interests
+        </h2>
+
+        <ul className="list-disc list-inside text-lg text-slate-600 space-y-3">
           <li>Web Development</li>
           <li>Learning New Technologies</li>
           <li>Artificial Intelligence Tools</li>
@@ -68,9 +79,12 @@ export default function About() {
       </section>
 
       {/* HOBBIES */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Hobbies</h2>
-        <ul className="list-disc list-inside text-slate-600 space-y-2">
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-6">
+          Hobbies
+        </h2>
+
+        <ul className="list-disc list-inside text-lg text-slate-600 space-y-3">
           <li>Exploring New Technologies</li>
           <li>Listening to Music</li>
           <li>Reading About Startups and Innovation</li>
@@ -80,23 +94,26 @@ export default function About() {
 
       {/* SPORTS */}
       <section>
-        <h2 className="text-2xl font-semibold mb-6">Sports</h2>
+        <h2 className="text-3xl font-semibold mb-6">
+          Sports
+        </h2>
 
-        <p className="text-slate-600 mb-8 max-w-3xl leading-relaxed">
+        <p className="text-lg text-slate-600 mb-10 max-w-4xl leading-relaxed">
           Sports help me maintain physical fitness, discipline, teamwork,
           and leadership qualities. I have represented my college in
-          Zonal and Inter-Zonal level tournaments.
+          Zonal and Inter-Zonal level tournaments, which helped me develop
+          strong collaboration, communication, and leadership skills.
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
 
           {/* HOCKEY */}
-          <div className="border border-slate-200 bg-white rounded-xl p-5 shadow-sm hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-3 text-slate-900">
+          <div className="border border-slate-200 bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition">
+            <h3 className="text-2xl font-semibold mb-4 text-slate-900">
               Hockey (Competitive)
             </h3>
 
-            <div className="grid grid-cols-2 gap-3 mb-4">
+            <div className="grid grid-cols-2 gap-4 mb-6">
               {[
                 "/Team_1.jpeg",
                 "/Hockey_trnmt.jpeg",
@@ -108,18 +125,19 @@ export default function About() {
                   key={img}
                   src={img}
                   alt="Hockey Achievement"
-                  width={300}
-                  height={200}
+                  width={400}
+                  height={280}
                   className="rounded-lg object-cover transition-all duration-300 hover:scale-105 cursor-pointer"
                   onClick={() => setZoomImage(img)}
                 />
               ))}
             </div>
 
-            <p className="text-slate-600 text-sm leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed">
               I regularly play hockey and have represented my college in
-              competitive tournaments, which strengthened my teamwork,
-              leadership, communication, and strategic thinking skills.
+              competitive tournaments. Through sports, I have strengthened
+              my teamwork, leadership, communication, discipline, and
+              strategic thinking abilities.
             </p>
           </div>
 
@@ -135,13 +153,12 @@ export default function About() {
           <Image
             src={zoomImage}
             alt="Zoomed"
-            width={900}
-            height={600}
+            width={1200}
+            height={800}
             className="rounded-xl max-h-[90vh] w-auto"
           />
         </div>
       )}
-
     </main>
   );
 }

@@ -60,40 +60,42 @@ export default function Certificates() {
     <main className="w-full min-h-screen px-8 md:px-16 lg:px-24 py-20 text-slate-900">
 
       {/* PAGE TITLE */}
-      <h1 className="text-4xl font-bold mb-10">Certifications</h1>
+      <h1 className="text-6xl md:text-7xl font-bold mb-14">
+        Certifications
+      </h1>
 
       {/* INTRO */}
-      <p className="text-slate-600 max-w-3xl mb-16 leading-relaxed">
+      <p className="text-xl text-slate-600 max-w-5xl mb-20 leading-relaxed">
         Below are some of the certifications and achievements I have earned
         through academic learning, internships, professional training,
         and sports activities.
       </p>
 
       {/* CERTIFICATES GRID */}
-      <div className="grid sm:grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-2 gap-10">
         {certificates.map((cert) => (
           <div
             key={cert.src}
-            className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-xl transition"
+            className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl transition"
           >
             <Image
               src={cert.src}
               alt={cert.title}
-              width={400}
-              height={260}
-              className="rounded-lg mb-4 cursor-pointer hover:scale-[1.02] transition-all duration-300"
+              width={600}
+              height={400}
+              className="rounded-xl mb-6 cursor-pointer hover:scale-[1.02] transition-all duration-300"
               onClick={() => setZoomImage(cert.src)}
             />
 
-            <h3 className="text-lg font-semibold mb-1 text-slate-900">
+            <h3 className="text-3xl font-semibold mb-3 text-slate-900">
               {cert.title}
             </h3>
 
-            <p className="text-sm text-slate-600">
+            <p className="text-lg text-slate-600">
               {cert.issuer}
             </p>
 
-            <p className="text-sm text-slate-500">
+            <p className="text-lg text-slate-500 mt-2">
               Year: {cert.year}
             </p>
           </div>
@@ -109,13 +111,14 @@ export default function Certificates() {
           <Image
             src={zoomImage}
             alt="Zoomed Certificate"
-            width={900}
-            height={600}
+            width={1400}
+            height={1000}
             className="rounded-xl max-h-[90vh] w-auto"
             unoptimized
           />
         </div>
       )}
+
     </main>
   );
 }
