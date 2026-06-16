@@ -21,7 +21,7 @@ export default function About() {
   }, []);
 
   return (
-    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto text-white">
+    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto text-slate-900">
 
       {/* PAGE TITLE */}
       <h1 className="text-4xl font-bold mb-10">About Me</h1>
@@ -30,26 +30,26 @@ export default function About() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Education</h2>
 
-        <div className="space-y-4 text-white/80">
+        <div className="space-y-4 text-slate-600">
           <div>
-            <p className="font-medium text-white">
+            <p className="font-medium text-slate-900">
               B.Tech (Computer Science and Engineering)
             </p>
             <p>
               Ballari Institute of Technology and Management,
               Ballari, Karnataka
             </p>
-            <p>2022</p>
+            <p>2022 – Present</p>
           </div>
 
           <div>
-            <p className="font-medium text-white">Intermediate</p>
+            <p className="font-medium text-slate-900">Intermediate</p>
             <p>Narayana Jr College, Kurnool, Andhra Pradesh</p>
             <p>2020 – 2022</p>
           </div>
 
           <div>
-            <p className="font-medium text-white">School (SSC)</p>
+            <p className="font-medium text-slate-900">School (SSC)</p>
             <p>Montessori E M High School, Kurnool, Andhra Pradesh</p>
             <p>2019 – 2020</p>
           </div>
@@ -59,9 +59,9 @@ export default function About() {
       {/* INTERESTS */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Interests</h2>
-        <ul className="list-disc list-inside text-white/80 space-y-2">
+        <ul className="list-disc list-inside text-slate-600 space-y-2">
           <li>Web Development</li>
-          <li>Learning New Things</li>
+          <li>Learning New Technologies</li>
           <li>Artificial Intelligence Tools</li>
           <li>Problem Solving & Logical Thinking</li>
         </ul>
@@ -70,11 +70,11 @@ export default function About() {
       {/* HOBBIES */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Hobbies</h2>
-        <ul className="list-disc list-inside text-white/80 space-y-2">
-          <li>Exploring new technologies</li>
-          <li>Listening to music</li>
-          <li>Reading about startups and innovation</li>
-          <li>Playing sports</li>
+        <ul className="list-disc list-inside text-slate-600 space-y-2">
+          <li>Exploring New Technologies</li>
+          <li>Listening to Music</li>
+          <li>Reading About Startups and Innovation</li>
+          <li>Playing Sports</li>
         </ul>
       </section>
 
@@ -82,7 +82,7 @@ export default function About() {
       <section>
         <h2 className="text-2xl font-semibold mb-6">Sports</h2>
 
-        <p className="text-white/80 mb-8 max-w-3xl">
+        <p className="text-slate-600 mb-8 max-w-3xl leading-relaxed">
           Sports help me maintain physical fitness, discipline, teamwork,
           and leadership qualities. I have represented my college in
           Zonal and Inter-Zonal level tournaments.
@@ -91,8 +91,8 @@ export default function About() {
         <div className="grid sm:grid-cols-2 gap-8">
 
           {/* HOCKEY */}
-          <div className="border border-white/20 rounded-lg p-5 hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-3 text-white">
+          <div className="border border-slate-200 bg-white rounded-xl p-5 shadow-sm hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold mb-3 text-slate-900">
               Hockey (Competitive)
             </h3>
 
@@ -102,7 +102,7 @@ export default function About() {
                 "/Hockey_trnmt.jpeg",
                 "/Hockey_clg.jpeg",
                 "/Self_1.jpeg",
-                "/Marathon.jpeg"
+                "/Marathon.jpeg",
               ].map((img) => (
                 <Image
                   key={img}
@@ -110,16 +110,16 @@ export default function About() {
                   alt="Hockey Achievement"
                   width={300}
                   height={200}
-                  className="transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+                  className="rounded-lg object-cover transition-all duration-300 hover:scale-105 cursor-pointer"
                   onClick={() => setZoomImage(img)}
                 />
               ))}
             </div>
 
-            <p className="text-white/80 text-sm">
+            <p className="text-slate-600 text-sm leading-relaxed">
               I regularly play hockey and have represented my college in
               competitive tournaments, which strengthened my teamwork,
-              leadership, and strategic thinking skills.
+              leadership, communication, and strategic thinking skills.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ export default function About() {
       {/* IMAGE ZOOM */}
       {zoomImage && (
         <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer"
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4 cursor-pointer"
           onClick={() => setZoomImage(null)}
         >
           <Image
@@ -137,7 +137,7 @@ export default function About() {
             alt="Zoomed"
             width={900}
             height={600}
-            className="rounded max-h-[90vh] w-auto"
+            className="rounded-xl max-h-[90vh] w-auto"
           />
         </div>
       )}

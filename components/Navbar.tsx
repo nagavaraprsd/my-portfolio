@@ -17,19 +17,19 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b">
-      <nav className="max-w-5xl mx-auto px-6 sm:px-10 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+      <nav className="w-full px-8 md:px-16 lg:px-24 py-4 flex items-center justify-between">
 
-        {/* LOGO / NAME */}
+        {/* LOGO */}
         <Link
           href="/"
-          className="text-black font-extrabold tracking-wide"
+          className="text-slate-900 font-bold text-lg tracking-wide"
         >
           B K Naga Vara Prasad
         </Link>
 
-        {/* NAV LINKS */}
-        <ul className="hidden sm:flex gap-8 text-sm font-medium">
+        {/* NAVIGATION */}
+        <ul className="hidden md:flex gap-8 text-sm font-medium">
           {navLinks.map((link) => {
             const isActive = pathname === link.path;
 
@@ -37,10 +37,10 @@ export default function Navbar() {
               <li key={link.path}>
                 <Link
                   href={link.path}
-                  className={`transition hover:text-black ${
+                  className={`transition-colors ${
                     isActive
-                      ? "text-black border-b-2 border-black pb-1"
-                      : "text-gray-600"
+                      ? "text-slate-900 border-b-2 border-slate-900 pb-1"
+                      : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
                   {link.name}
