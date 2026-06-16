@@ -1,7 +1,6 @@
 export default function Resume() {
   return (
-    <main className="px-6 sm:px-10 py-28 max-w-4xl mx-auto text-center text-slate-900">
-
+    <main className="w-full min-h-screen px-8 md:px-16 lg:px-24 py-20 text-slate-900">
       {/* TITLE */}
       <h1 className="text-4xl font-bold mb-6">
         Resume

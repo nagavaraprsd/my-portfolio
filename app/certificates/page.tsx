@@ -57,7 +57,7 @@ export default function Certificates() {
   ];
 
   return (
-    <main className="px-6 sm:px-10 py-20 max-w-5xl mx-auto text-slate-900">
+    <main className="w-full min-h-screen px-8 md:px-16 lg:px-24 py-20 text-slate-900">
 
       {/* PAGE TITLE */}
       <h1 className="text-4xl font-bold mb-10">Certifications</h1>
